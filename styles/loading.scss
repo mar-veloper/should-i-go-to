@@ -1,0 +1,22 @@
+$primary-dark: #1f1f2e;
+$white: #fbfbfb;
+
+.loading {
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: $white;
+  padding-top: 2rem;
+
+  &.light-mode {
+    background-color: $white;
+  }
+
+  &.dark-mode {
+    background-color: $primary-dark;
+  }
+}
